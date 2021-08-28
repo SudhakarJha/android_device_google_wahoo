@@ -39,3 +39,5 @@ userdebug_or_eng(`
   allow thermal-engine diag_device:chr_file rw_file_perms;
 ')
 dontaudit thermal-engine diag_device:chr_file rw_file_perms;
+
+allow thermal-engine self:capability2 { wake_alarm };
